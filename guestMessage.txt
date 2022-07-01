@@ -1,3 +1,1 @@
-SnehalAsodekarabc@gmail.comfd df 
-  Shiva  Mottaghi  shiva@gmail.com  Hey we did it 
-  Mo  El  mo@gmail.com  Good Going
+[{"firstName":"Shiva","surname":"Mottaghi","email":"shiva@gmail.com","message":"hello","date":"07\/01\/2022"},{"firstName":"Shiva","surname":"Mottaghi","email":"shiva@gmail.com","message":"hello","date":"07\/01\/2022"},{"firstName":"Shiva","surname":"Mottaghi","email":"shiva@gmail.com","message":"hello","date":"07\/01\/2022"},{"firstName":"Shiva","surname":"Mottaghi","email":"shiva@gmail.com","message":"hello","date":"07\/01\/2022"}]

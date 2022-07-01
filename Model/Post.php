@@ -1,11 +1,11 @@
 <?php
 
 Class Post{
-    protected string $firstName;
-    protected string $surname;
-    protected string $email;
-    protected string $message;
-    //protected Date $date;
+    private string $firstName;
+    private string $surname;
+    private string $email;
+    private string $message;
+    private string $date;
 
     public function __construct($firstName,$surname,$email,$message)
     {
@@ -13,7 +13,7 @@ Class Post{
         $this->surname = $surname;
         $this->email = $email;
         $this->message = $message;
-       // $this->date = date('m/d/Y');
+        $this->date = date('m/d/Y');
     }
 
     /**
@@ -51,8 +51,8 @@ Class Post{
     /**
      * @return Date|false|string
      */
-/*    public function getDate()
+    public function getDate()
     {
         return $this->date;
-    }*/
+    }
 }

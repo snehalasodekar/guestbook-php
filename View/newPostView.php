@@ -12,16 +12,17 @@
             <div class="card mt-2 mx-auto p-4 bg-light">
                 <div class="card-body bg-light">
                     <div class = "container">
-                        <form id="contact-form" role="form" method="post">
+                        <form id="contact-form" role="form" method="post" enctype="multipart/form-data"><!--Form-->
                             <div class="controls">
                                 <div class="row">
+                                    <!--First name-->
                                     <div class="col-md-6">
                                         <div class="form-group">
-
                                             <label for="form_name">Firstname *</label>
                                             <input id="form_name" type="text" name="firstName" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
                                         </div>
                                     </div>
+                                    <!--Last name-->
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="form_lastname">Lastname *</label>
@@ -29,15 +30,25 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!--Email Address-->
                                 <div class="row">
+                                <!--upload Image -->
+
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="form_email">Email *</label>
-                                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-
+                                            <label for="form_email">Upload Image</label>
+                                            <input type="file" name="fileToUpload" id="fileToUpload" class="form-control" placeholder="Please Select an Image *" required="required" data-error="upload valid image ">
+                                        </div>
+                                        <!-- Message title-->
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_title">Title *</label>
+                                                <input id="form_title" type="text" name="title" class="form-control" placeholder="Please enter message title *" required="required" data-error="Title is required.">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <!--Message-->
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">

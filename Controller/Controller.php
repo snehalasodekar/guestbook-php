@@ -13,6 +13,7 @@ class Controller {
     }
 
     public function invoke(){
+       //print_r($_POST);
         if(isset($_POST['page'])){
             $this->page = $_POST['page'];
         }
@@ -24,17 +25,24 @@ class Controller {
             case 'allPost':
                 //file get content
                 $decodedFileContent = $this->postLoader->getAllPosts();
+                if($decodedFileContent){$postNumber = count($decodedFileContent);}
+                include 'view/allPostView.php';
+                break;
+            case 'postNumber':
+
+                $decodedFileContent = $this->postLoader->getAllPosts();
+                if($decodedFileContent){$postNumber = $_POST['postNumber'];}
                 include 'view/allPostView.php';
                 break;
             case 'sendMessage':
-
-
-
-                //($_POST['firstName'],$_POST['surname'],$_POST['email'],$_POST['message']);
                 $this->postLoader->insertPostData($_POST);
-                echo "Thank you For your message";
+                //echo "Thank you For your message";
+            case 'refresh':
+                $_SERVER['PHP_SELF'];
             case 'default':
+
                 $decodedFileContent = $this->postLoader->getAllPosts();
+                if($decodedFileContent){$postNumber = count($decodedFileContent);}
                 include 'view/allPostView.php';
                 break;
         }

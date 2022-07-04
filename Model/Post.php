@@ -3,17 +3,18 @@
 Class Post{
     private string $firstName;
     private string $surname;
-    private string $email;
+    private string $title;
     private string $message;
     private string $date;
 
-    public function __construct($firstName,$surname,$email,$message)
+    public function __construct($firstName,$surname,$title,$message,$image)
     {
-        $this->firstName = $firstName;
-        $this->surname = $surname;
-        $this->email = $email;
-        $this->message = $message;
-        $this->date = date('m/d/Y');
+        $this->firstName = htmlspecialchars($firstName);
+        $this->surname = htmlspecialchars($surname);
+        $this->title = htmlspecialchars($title);
+        $this->message = htmlspecialchars($message);
+        $this->image = $image;
+        $this->date = date('m/d/Y - H:i');
     }
 
     /**
@@ -35,11 +36,10 @@ Class Post{
     /**
      * @return string
      */
-    public function getEmail(): string
+    public function getTitle(): string
     {
-        return $this->email;
+        return $this->title;
     }
-
     /**
      * @return string
      */
@@ -54,5 +54,13 @@ Class Post{
     public function getDate()
     {
         return $this->date;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getImage()
+    {
+        return $this->image;
     }
 }

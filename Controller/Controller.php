@@ -29,7 +29,6 @@ class Controller {
                 include 'view/allPostView.php';
                 break;
             case 'postNumber':
-
                 $decodedFileContent = $this->postLoader->getAllPosts();
                 if($decodedFileContent){$postNumber = $_POST['postNumber'];}
                 include 'view/allPostView.php';
@@ -40,7 +39,6 @@ class Controller {
             case 'refresh':
                 $_SERVER['PHP_SELF'];
             case 'default':
-
                 $decodedFileContent = $this->postLoader->getAllPosts();
                 if($decodedFileContent){$postNumber = count($decodedFileContent);}
                 include 'view/allPostView.php';

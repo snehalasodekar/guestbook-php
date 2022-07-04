@@ -10,8 +10,6 @@ class PostLoader{
 
        // echo "inside INsert POST DATA <pre/>";
 
-        //var_dump($_FILES["fileToUpload"]);exit;
-
         $imagePath = $this->saveImageData($_FILES["fileToUpload"]);
 
         if($imagePath == 3){

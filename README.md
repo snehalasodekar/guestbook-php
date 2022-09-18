@@ -22,7 +22,7 @@ Create a guestbook using php concepts of oop and MVC
 
 ## Implementation 
  1. I want to make this project using MVC, so in the beginning my folder structure will be,
-     <img src="src/img/basicMvcFolderStructure.png"/>
+     <img width="300px" src="src/img/basicMvcFolderStructure.png"/>
  2. The Src folder will have images used for the project. 
  2. I create multiple view files and access them through controller as per the conditions.
  3. The general description of flow and files code.
@@ -40,3 +40,9 @@ Create a guestbook using php concepts of oop and MVC
     4. Below is basic flow of the guestbook, 
       <img src="src/img/guestbookBasicFlow.png"/>
     5. Also, added emoji's and replace bad words with asterisk '*' and form to allPostView.php page to allow user to view specific number of post.
+
+    ## Final Output
+
+    <img src="src/img/indexImg.png">
+    <img src="src/img/add_message.png">
+    <img src="src/img/display_message.png">
